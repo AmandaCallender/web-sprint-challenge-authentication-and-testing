@@ -26,11 +26,21 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+JSON web tokens have cryptographic signatures, whereas session cookies do not. Another difference between the two is that JWTs are stateless because they are not stored within the server, and are rather stored in the client side, which connects to the next difference. 
+ Beacuse of the reason above, using sessions uses a lot more memory power from the  server, whereas JWTs can potentially save on server resources in most cases. This means that JWTs are much more scalable as a result. 
+ JWTs can authenticate across multiple locations, unlike sessions, because the data is stored locally in the request header. 
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+Bcrypt can expand what is called key factor to increase the amount of hashes it does to a password. This keeps hashed data safe as it makes hackers or other software unable to run programs that unhash the data. Bcrypt makes it extremely resistant to rainbow table-based attacks. 
 
 3. How are unit tests different from integration and end-to-end testing.
 
+End to end testing is a type of functional test.  Unlike a unit test, the application is not broken down into smaller parts in order to test it, end to end testing tests the entire application. E2E  tests interact with an app just like a  real user would.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+Test driven development (TDD) has several advantages. It is hard  to anticipate every way that a user might interact with our site, and it becomes really time consuming to manually test all possible outcomes. Most  companies will use testing as a safety net to prevent regressions and to better understand the application. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
