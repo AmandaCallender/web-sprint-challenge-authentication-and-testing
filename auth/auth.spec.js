@@ -38,14 +38,9 @@ describe("auth-router.js", () => {
 
 });
 
-
 ///login
 
-
 //get user list test
-
-
-
 
 describe("auth-router.js", () => {
 
